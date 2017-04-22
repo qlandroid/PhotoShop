@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/colorAccent" xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:state_pressed="false">
+        <shape>
+            <corners android:bottomLeftRadius="@dimen/x10" android:bottomRightRadius="@dimen/x10" android:topLeftRadius="@dimen/x10" android:topRightRadius="@dimen/x10" />
+            <solid android:color="#bdffce9d" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:bottomLeftRadius="@dimen/x10" android:bottomRightRadius="@dimen/x10" android:topLeftRadius="@dimen/x10" android:topRightRadius="@dimen/x10" />
+
+            <solid android:color="#ffce9d" />
+        </shape>
+    </item>
+</ripple>
