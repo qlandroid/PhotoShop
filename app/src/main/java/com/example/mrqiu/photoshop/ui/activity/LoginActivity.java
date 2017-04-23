@@ -41,7 +41,7 @@ public class LoginActivity extends BaseActivity {
     @Override
     public void initWidget() {
         super.initWidget();
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.login_bg_0);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.bg03);
         bitmap = FastBlur.doBlur(bitmap,10,false);
         l.setImageBitmap(bitmap);
     }

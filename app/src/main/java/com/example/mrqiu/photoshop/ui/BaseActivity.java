@@ -1,11 +1,14 @@
 package com.example.mrqiu.photoshop.ui;
 
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.PersistableBundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -45,8 +48,22 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     public abstract int initContentView();
 
-    public  void initData(){};
-    public void initWidget(){};
+    public  void initData(){}
+    public void initWidget(){}
+
+    public void changeFragment(Fragment fragment){
+
+
+    }
+
+    public void startActivity(Class clazz){
+        startActivity(new Intent(this,clazz));
+    }
+    public void startActivity(Bundle bundle,Class clazz){
+        Intent intent = new Intent(this,clazz);
+        intent.putExtra("bundle",bundle);
+        startActivity(intent);
+    }
 
     @TargetApi(19)
     private void setTranslucentStatus(boolean on) {

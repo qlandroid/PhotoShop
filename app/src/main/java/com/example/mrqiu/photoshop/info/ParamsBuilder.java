@@ -8,11 +8,11 @@ import java.util.Objects;
  */
 
 public abstract class ParamsBuilder {
-    public Class aClass;
-    public String url;
-    public Map<String,Object> mParams;
-    public Map<String,String> mHeader;
-    public Object mTag;
+    Class aClass;
+    String url;
+    Map<String, Object> mParams;
+    Map<String, String> mHeader;
+    Object mTag;
 
     public ParamsBuilder(Class aClass) {
         this.aClass = aClass;

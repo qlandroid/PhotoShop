@@ -105,4 +105,13 @@ public class PreferencesUtils {
         SharedPreferences sp = MyApp.getInstance().getSharedPreferences(C.sFileName, Context.MODE_PRIVATE);
         return sp.getStringSet(key, normal);
     }
+
+    public static void del(String fileName) {
+        SharedPreferences sp = MyApp.getInstance().getSharedPreferences(C.sFileName, Context.MODE_PRIVATE);
+        sp.edit().clear().commit();
+    }
+    public static void del(){
+        SharedPreferences sp = MyApp.getInstance().getSharedPreferences(C.sFileName, Context.MODE_PRIVATE);
+        sp.edit().clear().commit();
+    }
 }

@@ -32,19 +32,19 @@ public class HomeActivity extends BaseActivity {
     public void initData() {
         super.initData();
         mFragmentManager = getSupportFragmentManager();
-        names = new String[]{"点击1","点击2","点击3"};
+        names = new String[]{"首页","商店","个人"};
         normalIcon = new int[]{
-                android.R.drawable.ic_btn_speak_now,
-                android.R.drawable.ic_btn_speak_now,
-                android.R.drawable.ic_btn_speak_now
+                R.drawable.home_btn_home_normal,
+                R.drawable.home_btn_shop_normal,
+                R.drawable.home_btn_user_normal
         };
         selectIcon = new int[]{
-                R.drawable.login_pw,
-                R.drawable.login_pw,
-                R.drawable.login_pw
+                R.drawable.home_btn_home_select,
+                R.drawable.home_btn_shop_select,
+                R.drawable.home_btn_user_select
         };
-        selectColor = R.color.colorAccent;
-        normalColor = R.color.colorPrimaryDark;
+        selectColor = R.color.home_select_color;
+        normalColor = R.color.colorTextGray;
     }
 
     @Override
@@ -57,7 +57,7 @@ public class HomeActivity extends BaseActivity {
                         .commit();
             }
         });
-        ngvBtn.setResources(names,normalColor,selectColor,selectIcon,normalIcon);
+        ngvBtn.setResources(names,normalColor,selectColor,14,selectIcon,normalIcon);
         ngvBtn.setSelectButton(0);
     }
 }

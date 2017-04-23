@@ -40,21 +40,25 @@ public class NavigationGroupView extends LinearLayout implements View.OnClickLis
     }
 
     public void setResources(String[] names,int nameNormalColor, int nameSelectColors, int[] selectIcon,int[] normalIcon) {
+        setResources(names,nameNormalColor,nameSelectColors,14,selectIcon,normalIcon);
+    }
+    public void setResources(String[] names,int nameNormalColor, int nameSelectColors,int textSize, int[] selectIcon,int[] normalIcon) {
         if (names == null) return;
         for (int i = 0; i < names.length; i++) {
             String name = names[i];
             int select = selectIcon[i];
             int normal = normalIcon[i];
-            addButton(i, name,nameNormalColor,nameSelectColors,select,normal);
+            addButton(i, name,nameNormalColor,nameSelectColors,select,normal,textSize);
         }
     }
 
     private void addButton(int i, String name, int normalColor, int selectColor, int selectIcon
-            , int normalIcon) {
+            , int normalIcon,int textSize) {
         ImageButtonView button = new ImageButtonView(mContext);
         button.setLayoutParams(new LayoutParams(0, LayoutParams.MATCH_PARENT
                 , 1));
         button.setName(name);
+        button.setTextSize(textSize);
         button.setNameColor(selectColor,normalColor);
         button.setTag(i);
         button.setSelectImageView(selectIcon,normalIcon);
@@ -91,6 +95,7 @@ public class NavigationGroupView extends LinearLayout implements View.OnClickLis
         }
         mOnClickButtonListener.onClickSelectButton(position);
     }
+
 
     public interface OnClickButtonListener {
         void onClickSelectButton(int position);

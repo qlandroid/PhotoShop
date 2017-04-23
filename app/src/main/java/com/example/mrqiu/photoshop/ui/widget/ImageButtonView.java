@@ -38,6 +38,7 @@ public class ImageButtonView extends LinearLayout {
     private int selectIcon;
     private int normalIcon;
 
+    public int textSize;
     private void init(Context context, AttributeSet attrs, int defStyleAttr) {
         this.mContext = context;
         mTvName = new TextView(context);
@@ -126,5 +127,10 @@ public class ImageButtonView extends LinearLayout {
         super.setEnabled(enabled);
         mTvName.setEnabled(enabled);
         mImageView.setEnabled(enabled);
+    }
+
+    public void setTextSize(int textSize){
+        this.textSize = textSize;
+        mTvName.setTextSize(TypedValue.COMPLEX_UNIT_SP,textSize);
     }
 }

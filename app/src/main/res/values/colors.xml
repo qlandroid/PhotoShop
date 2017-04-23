@@ -2,7 +2,16 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#9e9e9e</color>
+    <color name="colorNull">#00ffffff</color>
 
+    <color name="home_select_color">#d4237a</color>
+    <color name="home_select_click_color">#e42382</color>
+    <color name="div_color">#cccccc</color>
    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="colorTextBlack">#000</color>
+    <color name="colorPrice">#ff8185</color>
+    <color name="colorBgGray">#e6e6e6</color>
+    <color name="colorTextGray">#cccccc</color>
 </resources>

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:fitsSystemWindows="true"
     tools:context="com.example.mrqiu.photoshop.ui.activity.HomeActivity">
     <FrameLayout
         android:id="@+id/home_fl_content"
@@ -13,6 +14,7 @@
         android:layout_weight="1"/>
     <com.example.mrqiu.photoshop.ui.widget.NavigationGroupView
         android:id="@+id/home_ngv_btn"
+        android:paddingTop="@dimen/x6"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/x40"/>
+        android:layout_height="@dimen/x46"/>
 </LinearLayout>

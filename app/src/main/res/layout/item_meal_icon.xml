@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x160"
+    android:orientation="vertical"
+    android:background="@color/white"
+   >
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/test_icon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/item_meal_iv_icon" />
+    <LinearLayout
+        android:paddingTop="@dimen/margin_vertical"
+        android:paddingLeft="@dimen/margin_horizontal"
+        android:paddingRight="@dimen/margin_horizontal"
+        android:paddingBottom="@dimen/margin_vertical"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_meal_tv_title"
+            android:singleLine="true"
+            android:textSize="@dimen/t12"
+            android:text="五一折扣，599折后399"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="@dimen/t12"
+            android:textColor="@color/colorTextGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩4天"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

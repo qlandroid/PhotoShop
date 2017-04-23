@@ -5,4 +5,7 @@
 
     <dimen name="margin_horizontal">@dimen/x10</dimen>
     <dimen name="margin_vertical">@dimen/x8</dimen>
+    <dimen name="padding">@dimen/x8</dimen>
+    <dimen name="padding_horizontal">@dimen/x8</dimen>
+    <dimen name="padding_vertical">@dimen/x8</dimen>
 </resources>
